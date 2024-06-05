@@ -15,6 +15,9 @@
 form *{
     font-size:16px;
 }
+form{
+    margin:10px 0;
+}
 input,
 select{
     height: 50px;
