@@ -41,9 +41,9 @@
     input,
     select,
     textarea{
-        width:100%;
+        min-width:100%;
     }
     [type*="submit"]{
-        width:40%;
+        min-width:40%;
     }
 }
