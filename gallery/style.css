@@ -1,8 +1,13 @@
-* {
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
-    font-family: 'Poppins', sans-serif;
+header {
+    position: fixed; /* Fixed position at the top */
+    top: 0; /* Position at the top of the viewport */
+    width: 100%; /* Full width */
+    background-color: white; /* Optional: Change background color */
+    z-index: 1000; /* Ensure it's above other elements */
+}
+
+#container {
+    height: auto;
 }
 
 #container {
@@ -21,6 +26,7 @@
 }
 
 #container .heading h2 {
+    padding-top: 80px;
     font-size: 3em;
     font-weight: bolder;
     padding-bottom: 10px;
@@ -35,7 +41,6 @@
     width: 100%;
     padding: 20px 10px 5px 10px;
 }
-
 
 #container .box .photo {
     display: flex;
@@ -85,4 +90,3 @@
         font-weight: 50;
     }
 }
-
