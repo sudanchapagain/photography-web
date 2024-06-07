@@ -1,26 +1,29 @@
-let currentPostIndex = 0;
-const blogPosts = document.querySelectorAll('.blog-post');
-const nextArrow = document.getElementById('next-arrow');
-const prevArrow = document.getElementById('prev-arrow');
+document.addEventListener('DOMContentLoaded', (event) => {
+    let currentPostIndex = 0;
+    const blogPosts = document.querySelectorAll('.blog-post');
+    const nextArrow = document.getElementById('next-arrow');
+    const prevArrow = document.getElementById('prev-arrow');
 
-function showPost(index) {
-    blogPosts[currentPostIndex].classList.remove('active');
-    currentPostIndex = index;
-    blogPosts[currentPostIndex].classList.add('active');
-}
+    function showPost(index) {
+        blogPosts[currentPostIndex].classList.remove('active');
+        currentPostIndex = index;
+        blogPosts[currentPostIndex].classList.add('active');
+    }
 
-function showNextPost() {
-    showPost((currentPostIndex + 1) % blogPosts.length);
-}
+    function showNextPost() {
+        showPost((currentPostIndex + 1) % blogPosts.length);
+    }
 
-function showPrevPost() {
-    showPost((currentPostIndex - 1 + blogPosts.length) % blogPosts.length);
-}
+    function showPrevPost() {
+        showPost((currentPostIndex - 1 + blogPosts.length) % blogPosts.length);
+    }
 
-nextArrow.addEventListener('click', showNextPost);
-prevArrow.addEventListener('click', showPrevPost);
+    nextArrow.addEventListener('click', showNextPost);
+    prevArrow.addEventListener('click', showPrevPost);
 
-setInterval(showNextPost, 7000);
+    setInterval(showNextPost, 7000);
+});
+
 
     
             // NewsLetter Form
