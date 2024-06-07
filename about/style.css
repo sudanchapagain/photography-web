@@ -1,3 +1,7 @@
+main {
+  height: 80vh;
+}
+
 .aboutMain {
   margin: 0 auto;
   max-width: 60rem;
@@ -22,6 +26,8 @@ p {
 
 h1 {
   margin-bottom: 2rem;
+  text-align: center;
+  margin-top: 25px;
 }
 
 p {
@@ -38,7 +44,6 @@ button {
 
 button:hover {
   background-color: #222;
-  text-decoration: unerline;
   border-radius: 55px;
 }
 
