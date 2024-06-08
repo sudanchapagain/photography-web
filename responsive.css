@@ -1,4 +1,8 @@
 @media screen and (max-width: 1020px) {
+  .bottom-background img {
+    display: none;
+  }
+
   .left {
     display: none;
   }
