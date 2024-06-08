@@ -4,6 +4,10 @@
   width: 100%;
 }
 
+main {
+  height: auto !important;
+}
+
 .container {
   background-color: black;
   color: white;
