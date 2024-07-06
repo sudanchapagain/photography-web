@@ -8,7 +8,7 @@ main {
 }
 
 .content {
-  background-image: url("./assets/img/bag.png");
+  background-image: url("./assets/img/bag.webp");
   background-size: cover;
   background-position: center;
   height: 100%;
@@ -68,6 +68,7 @@ main {
     display: block;
     gap: 0;
   }
+
   .services {
     border: none;
     padding-left: 0;
